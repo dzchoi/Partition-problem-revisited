@@ -1,6 +1,6 @@
 # Partition problem revisited
 
-**Partition problem**, as the [wiki page](https://en.wikipedia.org/wiki/Partition_problem) says, is the task of deciding whether a given multiset S of positive integers can be partitioned into two subsets S1 and S2 such that the sum of the numbers in S1 equals the sum of the numbers in S2. The wiki page introduces a [dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming) solution that involves creating a two-dimensional boolean table *P*.
+**Partition problem**, as the [wiki page](https://en.wikipedia.org/wiki/Partition_problem) says, is the task of deciding whether a given multiset *S* of positive integers can be partitioned into two subsets *S1* and *S2* such that the sum of the numbers in *S1* equals the sum of the numbers in *S2*. The wiki page introduces a [dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming) solution that involves creating a two-dimensional boolean table *P*.
 
 Instead of *P*, however, we can define **one-dimensional** index table *I* by:
 
@@ -17,7 +17,7 @@ Because:
 
 ### Implementation in C++
 
-The table *I* can be created as simply as *P* can be. It will take less time mostly, although the worst case is still the same, *O(N\*sum)*, where *N* is the cardinality(size) of *S* and *sum* is the last index of the table *I*. We can generate *I* as much as specified by *sum*.
+The table *I* can be created as simply as *P* can be. However, it will take less time mostly, although the worst case is still the same, *O(N\*sum)*, where *N* is the cardinality(size) of *S* and *sum* is the last index of the table *I*. We can generate *I* as much as specified by *sum*.
 
 ```C++
 typedef int index_t;
@@ -45,7 +45,7 @@ std::vector<index_t> make_I(const std::vector<unsigned>& S, const unsigned sum)
 
 ### Applications
 
-The same function *find_partition()* in the wiki page can be defined.
+The same function *find_partition()* in the wiki page can be defined based on *I*.
 
 ```C++
 bool find_partition(const std::vector<unsigned>& S)
