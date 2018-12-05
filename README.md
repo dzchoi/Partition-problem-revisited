@@ -83,9 +83,9 @@ int main()
 }
 ```
 
-### Test program uploaded
+### Running test program
 
-Along with this document, there is `test.cpp` file, which will list possible subsets for all sums.
+Along with this document, there is `test.cpp` file uploaded, which will list possible subsets for all sums.
 
 ```
 $clang++ test.cpp && ./a.out 1 3 1 1 2 2
