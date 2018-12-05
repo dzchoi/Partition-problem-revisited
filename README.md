@@ -55,7 +55,7 @@ bool find_partition(const std::vector<unsigned>& S)
 }
 ```
 
-We can find the actual subset *S1* that can make such a sum. (There may be more than one possible subset. In that case, this function finds one that consists of as earlier elements of *S* as possible.)
+We can find the actual subset *S1* that can make a given sum. (There may be more than one possible subset. In that case, this function finds one that consists of as earlier elements of *S* as possible.)
 
 ``` C++
 std::vector<unsigned> subset(const std::vector<unsigned>& S, unsigned sum)
