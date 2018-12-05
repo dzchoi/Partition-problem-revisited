@@ -82,3 +82,22 @@ int main()
     // will produce: 2 1 3 1
 }
 ```
+
+### Test program uploaded
+
+Along with this document, there is `test.cpp` file, which will list possible subsets for all sums.
+
+```
+$clang++ test.cpp && ./a.out 1 3 1 1 2 2
+0: []
+1: [1]
+2: [1 1]
+3: [3]
+4: [3 1]
+5: [1 3 1]
+6: [1 1 3 1]
+7: [2 1 3 1]
+8: [2 1 1 3 1]
+9: [2 2 1 3 1]
+10: [2 2 1 1 3 1]
+```
