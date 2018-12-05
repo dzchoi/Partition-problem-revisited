@@ -72,7 +72,7 @@ std::vector<unsigned> subset(const std::vector<unsigned>& S, unsigned sum)
 }
 ```
 
-So,
+And, we can use:
 
 ```C++
 int main()
