@@ -1,6 +1,6 @@
 # Partition problem revisited
 
-**[Partition problem](https://en.wikipedia.org/wiki/Partition_problem)** is the task of deciding whether a given multiset S of positive integers can be partitioned into two subsets S1 and S2 such that the sum of the numbers in S1 equals the sum of the numbers in S2. As the wiki page says, there is a [dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming) solution that involves creating a two-dimensional boolean table *P*.
+**Partition problem**, as the [wiki page](https://en.wikipedia.org/wiki/Partition_problem) says, is the task of deciding whether a given multiset S of positive integers can be partitioned into two subsets S1 and S2 such that the sum of the numbers in S1 equals the sum of the numbers in S2. As the wiki page says, there is a [dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming) solution that involves creating a two-dimensional boolean table *P*.
 
 Instead of *P*, however, we can define **one-dimensional** index table *I* by:
 
